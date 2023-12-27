@@ -1,5 +1,5 @@
 "use client"
-import { removeTodo } from '@/actions/removeTodo'
+import { deleteTodo } from '@/actions/deleteTodo'
 import React from 'react'
 import { Todo } from '@prisma/client'
 import { X } from 'lucide-react'
@@ -16,7 +16,7 @@ const TodoList: React.FC<TodoListProps> = ({todos}) => {
           <li>
             {todo.title}
           </li>
-          <button onClick={() => removeTodo(todo.id)}>
+          <button onClick={() => deleteTodo(todo.id)}>
             <X />
           </button>
         </div>
