@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { addTodo } from '@/actions/actions'
+import { addTodo } from '@/actions/addTodo'
 import Button from './Button'
 
 const Form = () => {
